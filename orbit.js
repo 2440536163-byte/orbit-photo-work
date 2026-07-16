@@ -1,0 +1,1 @@
+document.querySelectorAll('nav button').forEach(b=>b.addEventListener('click',()=>{if(b.dataset.mode==='ring'){stage.classList.add('mode-ring')}else{stage.classList.remove('mode-ring')}}));layout('ring');document.querySelector('nav button[data-mode="flat"]').classList.remove('active');document.querySelector('nav button[data-mode="ring"]').classList.add('active');
